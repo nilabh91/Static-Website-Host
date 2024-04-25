@@ -26,3 +26,26 @@ This repository is about hosting a static website from AWS S3 bucket using AWS C
 
 7. Make changes as , Enable static web hosting , put document root file like index.html and make changes.
 8. Under Static website hosting, note the Endpoint.The Endpoint is the Amazon S3 website endpoint for your bucket.
+
+
+# Third Step
+1. Go to AWS Cloudfront Service.
+2. Choose Create distribution Option.
+3. Here Hoose your S3 bucket option in origin domain.
+4. For Origin access, select Legacy access identities. For the Origin access identity, you can choose from the list, or choose Create new OAI (both will work).
+   For Bucket policy, select Yes, update the bucket policy.
+5. Under Viewer, set Viewer protocol policy to Redirect HTTP to HTTPS.
+6. Under Cname give like www.domain.com if you want . Select the SSL certificate that we created . Remember to add default root object as index.html . Create distribution .
+7. Wait for its deployment as it will around each and every edge location at every region.
+8. After deployment , can use DNS of cloudfront to check whether your site is accessable or throwing error like 404 or 403. If yes then rectify it.
+
+# Fourth step
+1. This is the last step where we can create a record in ROUTE 53 for our Cloudfront DNS.
+2. <img width="1064" alt="Screenshot 2024-04-25 at 11 32 58 PM" src="https://github.com/nilabh91/Static-Website-Host/assets/153995859/955c9cfd-4ad1-4a6e-b1c4-e61dfa6e8140">
+Choose your distribution and create records.
+3. Now access your website through your domain name.
+
+
+# REFERENCE
+[
+](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-cloudfront-overview.html)
