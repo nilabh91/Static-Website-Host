@@ -42,10 +42,9 @@ This repository is about hosting a static website from AWS S3 bucket using AWS C
 # Fourth step
 1. This is the last step where we can create a record in ROUTE 53 for our Cloudfront DNS.
 2. <img width="1064" alt="Screenshot 2024-04-25 at 11 32 58 PM" src="https://github.com/nilabh91/Static-Website-Host/assets/153995859/955c9cfd-4ad1-4a6e-b1c4-e61dfa6e8140">
-Choose your distribution and create records.
-3. Now access your website through your domain name.
+3.Choose your distribution and create records.
+4. Now access your website through your domain name.
 
 
 # REFERENCE
-[
-](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-cloudfront-overview.html)
+ https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started-cloudfront-overview.html
