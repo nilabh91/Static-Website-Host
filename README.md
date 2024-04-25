@@ -20,7 +20,9 @@ This repository is about hosting a static website from AWS S3 bucket using AWS C
 3. After you can upload your static website file.
 4. <img width="696" alt="Screenshot 2024-04-25 at 8 14 14 PM" src="https://github.com/nilabh91/Static-Website-Host/assets/153995859/107b7409-d560-4ec0-88ed-a30c0b2bba03">
 
-5. Here in the properties will find out the properties , at this portion you will find out static web hosting part:
+5. Here under the properties section , you will find out static web hosting part:
 
 6. <img width="696" alt="Screenshot 2024-04-25 at 11 02 24 PM" src="https://github.com/nilabh91/Static-Website-Host/assets/153995859/bdd8d4fd-2208-4f0f-aae9-4b1e1671a47b">
- 
+
+7. Make changes as , Enable static web hosting , put document root file like index.html and make changes.
+8. Under Static website hosting, note the Endpoint.The Endpoint is the Amazon S3 website endpoint for your bucket.
